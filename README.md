@@ -12,6 +12,25 @@
 + I always loved to unveil mysteries and well whats better to unveil that a mistery about money , AM I RIGHT people?
 + I like puzzles and think about the data and his relationship with the model or with the results.
 
+## What the project even about
++ The project is a predictive model that has a binary target outcome,it either gives a 1 == the price closed higher than it opened or it either gets a 0 == the price closed lower than it opened on daily dataframe
+
+I then compared the results of the model with some famous very simple strategies, like buy and hold, DCA and flipping a coin .
+
+The strategy have a very high return 3500% on 4years which is a lot ,so more time is needed to go through it to see if it got over fitted or if the trades are legal, that meaning the model is not cheating.
+
+## Some metrics 
+### Original data + sentiment but cols filtered by importance
++ Precision: 0.69
++ Recall: 0.73
++ F1 Score: 0.71
++ AUC-ROC: 0.68
++ True Negatives (Actual Red Days Correctly Predicted): 74
++ False Positives (Green Days Incorrectly Predicted as Red): 49
++ True Positives (Actual Green Days Correctly Predicted): 111
++ False Negatives (Red Days Incorrectly Predicted as Green): 42
++ overall score 69.3
+
 ## My approach
 + I first got the data from binance api ,ohlc and then i downloaded sentiment data (link inside the code) , i also tried doing some techincal indicators , then i testes the gradient boosting classifier with all the diferent data to see how it behave after applying more data or less.
 
